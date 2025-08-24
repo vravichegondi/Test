@@ -11,6 +11,8 @@ pipeline {
                 bat 'mwn package deploy -DmuleDeploy'
             }
         }
+
+        
         /* stage('Perform Regression Testing') {
             steps {
                 bat 'c:\\users\\Jitendra\\AppData\\Roaming\npm\\newman run F:\\newman\\worldtimezone.postman_collection.json --disable-unicode'
