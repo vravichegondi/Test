@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('Build Application') {
             steps {
-                bat 'mwn clean install'
+                bat 'mvn clean install'
             }
         }
         stage('Deploy Application To Mulesoft Cloudhub') {
             steps {
-                bat 'mwn package deploy -DmuleDeploy'
+                bat 'mvn package deploy -DmuleDeploy'
             }
         }
 
